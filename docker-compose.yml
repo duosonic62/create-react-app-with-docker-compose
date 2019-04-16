@@ -1,7 +1,10 @@
 version: "2"
 services:
   node:
-    build: ./docker/node
+    build: 
+      context: ./docker/node
+      args: 
+        APP: $APP
     environment:
       - NODE_ENV=development
     volumes:

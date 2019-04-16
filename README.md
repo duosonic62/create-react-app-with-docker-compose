@@ -5,13 +5,13 @@
 ```$ docker-compose build```
 
 1. create-react-app  
-```$ docker-compose run --rm node create-react-app [APP_NAME]```
+```$ docker-compose run --rm node npx create-react-app [APP_NAME]```
 
 1. npm install  
-```docker-compose run --rm node npm install```
+```docker-compose run --rm node yarn install```
 
 1. run react app  
-```docker-compose run --rm --service-ports node sh -c "cd [APP_NAME] && npm start" ```
+```docker-compose run --rm --service-ports node sh -c "cd [APP_NAME] && yarn start" ```
 
 * --rm  
 runが終了した際にimageを削除してくれるため
