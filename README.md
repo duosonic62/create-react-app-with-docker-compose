@@ -15,4 +15,5 @@
 
 * --rm  
 runが終了した際にimageを削除してくれるため
-*
+* sh -c "cd [APP_NAME] && yarn start
+2つのコマンドを一気に処理してもらうため
